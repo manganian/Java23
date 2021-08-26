@@ -1,4 +1,4 @@
-package pl.chojnacki.lesson4.example;
+package pl.chojnacki.lesson3.example;
 
 public class Main {
     public static void main(String[] args) {

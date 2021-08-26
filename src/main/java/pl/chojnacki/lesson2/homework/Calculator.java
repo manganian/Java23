@@ -1,4 +1,4 @@
-package pl.chojnacki;
+package pl.chojnacki.lesson2.homework;
 
 public class Calculator {
     public static int sum(int num1, int num2){

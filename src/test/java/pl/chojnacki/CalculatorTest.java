@@ -2,8 +2,7 @@ package pl.chojnacki;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import pl.chojnacki.lesson2.homework.Calculator;
 
 class CalculatorTest {
 
