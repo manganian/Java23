@@ -10,9 +10,9 @@ class MinutesTest {
         //given
         int minutes = 1;
         //when
-        String result = Minutes.convertMinutestoSeconds(minutes);
+        int result = Minutes.convertMinutesToSeconds(minutes);
         //then
-        Assertions.assertEquals("1 minutes equals 60 seconds.",result);
+        Assertions.assertEquals(60,result);
     }
 
     @Test
@@ -20,9 +20,9 @@ class MinutesTest {
         //given
         int minutes = 5;
         //when
-        String result = Minutes.convertMinutestoSeconds(minutes);
+        int result = Minutes.convertMinutesToSeconds(minutes);
         //then
-        Assertions.assertEquals("5 minutes equals 300 seconds.",result);
+        Assertions.assertEquals(300,result);
     }
 
     @Test
@@ -30,9 +30,9 @@ class MinutesTest {
         //given
         int minutes = 0;
         //when
-        String result = Minutes.convertMinutestoSeconds(minutes);
+        int result = Minutes.convertMinutesToSeconds(minutes);
         //then
-        Assertions.assertEquals("O minutes equals 0 seconds.",result);
+        Assertions.assertEquals(0,result);
     }
 
     @Test
@@ -40,9 +40,8 @@ class MinutesTest {
         //given
         int minutes = -5;
         //when
-        String result = Minutes.convertMinutestoSeconds(minutes);
+        int result = Minutes.convertMinutesToSeconds(minutes);
         //then
-        Assertions.assertEquals("Enter a positive number to convert it.",result);
+        Assertions.assertEquals(0,result);
     }
-
 }

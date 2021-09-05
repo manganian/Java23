@@ -1,15 +1,12 @@
 package pl.chojnacki.lesson3.homework;
 
 public class Minutes {
-    public static String convertMinutestoSeconds(int minutes) {
-        if (minutes == 0) {
-            return "O minutes equals 0 seconds.";
-        }
-        else if (minutes > 0) {
-        return minutes + " minutes equals " + minutes*60 + " seconds." ;
+    public static int convertMinutesToSeconds(int minutes) {
+        if (minutes > 0) {
+            return minutes*60 ;
         }
         else {
-           return "Enter a positive number to convert it.";
+            return 0;
         }
     }
 }
