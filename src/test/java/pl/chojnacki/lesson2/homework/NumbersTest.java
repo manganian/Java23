@@ -10,9 +10,9 @@ class NumbersTest {
         //given
         int number = 4;
         //when
-        String result = Numbers.checkNumberIsEven(number);
+        boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertEquals("A number is even.",result);
+        Assertions.assertTrue(result);
     }
 
     @Test
@@ -20,9 +20,9 @@ class NumbersTest {
         //given
         int number = 11;
         //when
-        String result = Numbers.checkNumberIsEven(number);
+        boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertEquals("A number is odd.", result);
+        Assertions.assertFalse(result);
     }
 
     @Test
@@ -30,9 +30,9 @@ class NumbersTest {
         //given
         int number = 0;
         //when
-        String result = Numbers.checkNumberIsEven(number);
+        boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertEquals("Enter a number between 1 and 2 147 483 647",result);
+        Assertions.assertFalse(result);
     }
 
     @Test
@@ -40,8 +40,8 @@ class NumbersTest {
         //given
         int number = -256;
         //when
-        String result = Numbers.checkNumberIsEven(number);
+        boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertEquals("Enter a number between 1 and 2 147 483 647",result);
+        Assertions.assertFalse(result);
     }
 }
