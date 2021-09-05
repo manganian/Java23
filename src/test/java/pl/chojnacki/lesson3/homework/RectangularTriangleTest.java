@@ -8,11 +8,11 @@ class RectangularTriangleTest {
     @Test
     void shouldReturnTrueWhenSidesAreThreeFourAndFive() {
         //given
-        double A = 3;
-        double B = 4;
-        double C = 5;
+        double sideA = 3;
+        double sideB = 4;
+        double sideC = 5;
         //when
-        boolean result = RectangularTriangle.isTriangleRectangular(A,B,C);
+        boolean result = RectangularTriangle.isTriangleRectangular(sideA,sideB,sideC);
         //then
         Assertions.assertTrue(result);
     }
@@ -20,11 +20,11 @@ class RectangularTriangleTest {
     @Test
     void shouldReturnFalseWhenSidesAreThreedotThreeAndFourAndFive() {
         //given
-        double A = 3.3;
-        double B = 4;
-        double C = 5;
+        double sideA = 3.3;
+        double sideB = 4;
+        double sideC = 5;
         //when
-        boolean result = RectangularTriangle.isTriangleRectangular(A,B,C);
+        boolean result = RectangularTriangle.isTriangleRectangular(sideA,sideB,sideC);
         //then
         Assertions.assertFalse(result);
     }
@@ -32,11 +32,11 @@ class RectangularTriangleTest {
     @Test
     void shouldReturnFalseWhenSidesAreMinusSevendotThreeAndFourAndFive() {
         //given
-        double A = -7.3;
-        double B = 4;
-        double C = 5;
+        double sideA = -7.3;
+        double sideB = -4;
+        double sideC = -5;
         //when
-        boolean result = RectangularTriangle.isTriangleRectangular(A,B,C);
+        boolean result = RectangularTriangle.isTriangleRectangular(sideA,sideB,sideC);
         //then
         Assertions.assertFalse(result);
     }
@@ -44,11 +44,11 @@ class RectangularTriangleTest {
     @Test
     void shouldReturnFalseWhenSidesAreZero() {
         //given
-        double A = 0;
-        double B = 0;
-        double C = 0;
+        double sideA = 0;
+        double sideB = 0;
+        double sideC = 0;
         //when
-        boolean result = RectangularTriangle.isTriangleRectangular(A,B,C);
+        boolean result = RectangularTriangle.isTriangleRectangular(sideA,sideB,sideC);
         //then
         Assertions.assertFalse(result);
     }
