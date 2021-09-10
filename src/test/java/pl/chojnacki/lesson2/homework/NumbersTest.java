@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class NumbersTest {
 
     @Test
-    void shouldReturnNumberIsEvenWhenEnter4() {
+    void shouldReturnTrueWhenNumberIs4() {
         //given
         int number = 4;
         //when
@@ -16,7 +16,7 @@ class NumbersTest {
     }
 
     @Test
-    void shouldReturnNumberIsOddWhenEnter11() {
+    void shouldReturnNFalseWhenNumberIs11() {
         //given
         int number = 11;
         //when
@@ -26,22 +26,22 @@ class NumbersTest {
     }
 
     @Test
-    void shouldReturnEnterANumberBetweenWhenEnter0() {
+    void shouldReturnTrueWhenNumberIs0() {
         //given
         int number = 0;
         //when
         boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertFalse(result);
+        Assertions.assertTrue(result);
     }
 
     @Test
-    void shouldReturnEnterANumberBetweenWhenEnterMinus256() {
+    void shouldReturnTrueWhenNumberIsMinus256() {
         //given
         int number = -256;
         //when
         boolean result = Numbers.checkNumberIsEven(number);
         //then
-        Assertions.assertFalse(result);
+        Assertions.assertTrue(result);
     }
 }
