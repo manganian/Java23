@@ -21,10 +21,6 @@ public abstract class BaseEmployee {
         return currentYear - yearOfHire;
     }
 
-    public double getSalary() {
-        return calculateMonthlySalary();
-    }
-
     public String toString() {
         return String.format(
                 "Name: %s, Surname: %s, Year of hire: %s, Salary: %s" ,
