@@ -1,16 +1,19 @@
 package pl.chojnacki.lesson6.homework.task9;
 
 public class DivisibilityValidator {
-    public static void validate(int number) {
-        try {
-            if (number % 3 != 0) {
-                throw new IllegalArgumentException();
+    public static void validate(int[] values) {
+        for (int value : values) {
+            try {
+                if (value % 3 != 0) {
+                    throw new IllegalArgumentException();
+                }
+            } catch (IllegalArgumentException e) {
+                System.out.println(value + " is indivisible by 3");
+                continue;
             }
-        } catch (IllegalArgumentException e) {
-            System.out.println(number + " is indivisible by 3");
-        }
 
-        int result = number / 3;
-        System.out.println(number + "/3 = " + result);
+            int result = value / 3;
+            System.out.println(value + "/3 = " + result);
+        }
     }
 }
