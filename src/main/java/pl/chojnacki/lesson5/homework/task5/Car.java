@@ -12,17 +12,25 @@ public class Car implements Vehicle {
         return engineStarted;
     }
 
-    @Override
     public void startEngine() {
         if (!engineStarted) {
             engineStarted = true;
         }
     }
 
-    @Override
     public void stopEngine() {
         if (engineStarted) {
             engineStarted = false;
         }
+    }
+
+    @Override
+    public void turnLeft() {
+        System.out.println("Turn on the left turn signal");
+    }
+
+    @Override
+    public void turnRight() {
+        System.out.println("Turn on the right turn signal");
     }
 }
